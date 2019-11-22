@@ -32,8 +32,8 @@ public class DevBootStrap implements ApplicationListener<ContextRefreshedEvent> 
         Publisher harper = new Publisher("Harper Collins", "12 West Road, CA");
         Publisher wrox = new Publisher("Wrox", "24 East Road, NY");
 
-        publisherRepository.save(harper);
-        publisherRepository.save(wrox);
+        /*publisherRepository.save(harper);
+        publisherRepository.save(wrox);*/
 
         //Eric
         Author eric = new Author("Eric", "Evans");
@@ -43,7 +43,7 @@ public class DevBootStrap implements ApplicationListener<ContextRefreshedEvent> 
 
         authorRepository.save(eric);
         bookRepository.save(ddd);
-
+        publisherRepository.save(harper);
 
         //Rod
         Author rod = new Author("Rod", "Johnson");
@@ -53,5 +53,6 @@ public class DevBootStrap implements ApplicationListener<ContextRefreshedEvent> 
 
         authorRepository.save(rod);
         bookRepository.save(noEJB);
+        publisherRepository.save(wrox);
     }
 }
